@@ -79,7 +79,7 @@ function ModalImage(){
             {/* <img id="myImg" src="./images/img_snow.jpg" alt="Snow" style={{"width":"100%", "max-width":"300px"}}/> */}
 
             {/* <!-- The Modal --> */}
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal" style={{display:"none"}}>
 
                 {/* <!-- The Close Button --> */}
                 <span class="close">&times;</span>
@@ -339,7 +339,8 @@ function toggleImg(src, alt){
     // modal.zIndex = 3;
     // modal.zIndex = "3";
     // module.
-    modal.display = "block";
+    // modal.
+    // modal.display = "block";
     modalImg.src = src;
     captionText.innerHTML = alt;
 }
