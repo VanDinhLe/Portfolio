@@ -89,7 +89,7 @@ function Navbar() {
     return (
         <header>
             <a href="#" class="logo">
-                <img src="./images/lotus.png" alt="Logo" width="34" height="28" style={{ marginRight: 6 }} class="d-inline-block align-text-top" />
+                <img src={require("./images/lotus.png")} alt="Logo" width="34" height="28" style={{ marginRight: 6 }} class="d-inline-block align-text-top" />
                 Din Le
             </a>
             <div class="toggle" ></div>
@@ -136,8 +136,8 @@ function About() {
         // About Me
         <section class="about" id="about">
             <div id="cf">
-                <img class="bottom" src="./images/hcm.jpg" />
-                <img class="top" src="./images/usf.jpg" />
+                <img class="bottom" src={require("./images/hcm.jpg")} />
+                <img class="top" src={require("./images/usf.jpg")} />
             </div>
             <div class="title">
                 <h2 class="fw-bold">About Me</h2>
@@ -181,19 +181,19 @@ function Project() {
                 <div class="row members-list">
                     <div class="column column-three text-center">
                         <p class="member-name">Design</p>
-                        <img src="./images/structure.png" alt="structure" class="member-image img-thumbnail place-image" onClick ={()=>{toggleImg("./images/structure.png","structure")}} />
+                        <img src={require("./images/structure.png")} alt="structure" class="member-image img-thumbnail place-image" onClick ={()=>{toggleImg("./images/structure.png","structure")}} />
                     </div>
 
 
                     <div class="column column-three text-center">
                         <p class="member-name">Hardware</p>
-                        <img src="./images/components.png" alt="components" class="member-image img-thumbnail place-image" onClick ={()=>{toggleImg("./images/components.png","components")}} />
+                        <img src={require("./images/components.png")} alt="components" class="member-image img-thumbnail place-image" onClick ={()=>{toggleImg("./images/components.png","components")}} />
                     </div>
 
 
                     <div class="column column-three text-center">
                         <p class="member-name">Product</p>
-                        <img src="./images/kubot.png" alt="kubot" class="member-image img-thumbnail place-image" onClick ={()=>{toggleImg("./images/kubot.png","kubot")}} />
+                        <img src={require("./images/kubot.png")} alt="kubot" class="member-image img-thumbnail place-image" onClick ={()=>{toggleImg("./images/kubot.png","kubot")}} />
                     </div>
 
 
@@ -224,7 +224,7 @@ function Project2()
                 {/* <!-- Places --> */}
                 <div class="row places-list">
                     <div class="column column-three">
-                        <img src="./images/incollege.png" alt="New York" class="place-image"/>
+                        <img src={require("./images/incollege.png")} alt="New York" class="place-image"/>
                         <div class="place-body">
                             <h3 class="place-heading">InCollege App</h3>
                             <p class="place-time">Fall 2022</p>
@@ -235,7 +235,7 @@ function Project2()
 
 
                     <div class="column column-three">
-                        <img src="./images/scp.png" alt="Paris" class="place-image" style={{height: "274px"}}/>
+                        <img src={require("./images/scp.png")} alt="Paris" class="place-image" style={{height: "274px"}}/>
                         <div class="place-body">
                             <h3 class="place-heading">Hack Jam</h3>
                             <p class="place-time">Fall 2022</p>
@@ -246,7 +246,7 @@ function Project2()
 
 
                     <div class="column column-three">
-                        <img src="./images/image-proccessing.png" alt="San Francisco" class="place-image" style={{height: "274px"}}/>
+                        <img src={require("./images/image-proccessing.png")} alt="San Francisco" class="place-image" style={{height: "274px"}}/>
                         <div class="place-body">
                             <h3 class="place-heading">Image Proccessing Tool</h3>
                             <p class="place-time">Spring 2022</p>
