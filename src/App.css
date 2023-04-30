@@ -402,20 +402,20 @@ img {
 }
 
 /* -------------- */
-/* Tour section */
-.tour-section {
+/* activities section */
+.activity-section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 
-.tickets-list {
+.inprogress-list {
     background-color: #fff;
     margin-top: 40px;
     list-style: none;
 }
 
 
-.tickets-list li {
+.inprogress-list li {
     color: #757575;
     font-size: 15px;
     padding: 11px 16px;
@@ -423,7 +423,7 @@ img {
 }
 
 
-.tickets-list .sold-out {
+.inprogress-list .inprogress {
     background-color: #00830d;
     color: #fff;
     padding: 3px 4px;
@@ -431,7 +431,7 @@ img {
 }
 
 
-.tickets-list .quantiy {
+.inprogress-list .quantiy {
     float: right;
     width: 24px;
     height: 24px;

@@ -13,16 +13,16 @@ function Contact(){
             <div class="row contact-content">
                 <div class="column col-sm-3 contact-info">
                     <div style={{"display": "flex"}}> 
-                        <i class="ti-location-pin"><a href='#a'><i class="fab fa-github"></i></a></i>
+                        <i class="ti-location-pin"><a href='https://github.com/VanDinhLe'><i class="fab fa-github"></i></a></i>
                         <p>Github</p>
                     </div>
                     <div style={{"display": "flex"}}>
-                        <i class="ti-mobile"><a href='#a'><i class="fas fa-envelope"></i></a></i>
+                        <i class="ti-mobile"><a href='mailto:vle16@usf.edu'><i class="fas fa-envelope"></i></a></i>
                         <p>vle16@usf.edu</p>
                     </div >
                     <div style={{"display": "flex"}}>
                         <i class="ti-email"><a href='#a'><i class="fas fa-map-marker-alt"></i></a></i>
-                        <p>Email: mail@mail.com</p>
+                        <p>Tampa, FL</p>
                     </div>
                 </div>
 
@@ -95,6 +95,7 @@ function ModalImage(){
 }
 
 // phai viet hoa chu dau
+// NAvbar
 function Navbar() {
     return (
         <header>
@@ -222,49 +223,49 @@ function Project() {
 function Project2()
 {
     return(
-        <div id="activites" class="tour-section" style={{"margin-top": "50px"}}>
+        <div id="activites" class="activity-section" style={{"margin-top": "50px"}}>
             <div class="content-section">
                 <h2 class="section-heading text-white">OTHER ACTIVITIES</h2>
                 <p class="section-subheading text-white">Working hard!</p>
                 
                 {/* <!-- Ticket --> */}
-                <ul class="tickets-list">
-                    <li>Compiler: Develop compiler for DJ language <span class="sold-out">In Progress</span></li>
-                    <li>Coffe Shop Management App: Develop Python program to manage coffee shop franchises <span class="sold-out">In Progress</span></li>
+                <ul class="inprogress-list">
+                    <li>Compiler: Develop compiler for DJ language <span class="inprogress">In Progress</span></li>
+                    <li>Coffe Shop Management App: Develop Python program to manage coffee shop franchises <span class="inprogress">In Progress</span></li>
                 </ul>
 
 
                 {/* <!-- Places --> */}
                 <div class="row places-list">
                     <div class="column column-three">
-                        <img src={require("./images/incollege.png")} alt="New York" class="place-image"/>
+                        <img src={require("./images/incollege.png")} alt="InCollege" class="place-image"/>
                         <div class="place-body">
                             <h3 class="place-heading">InCollege App</h3>
                             <p class="place-time">Fall 2022</p>
                             <div class="place-description">Create LinkedIn similar platform for students.</div>
-                            <a href="#" class="button">See more</a>
+                            <a href="https://github.com/chuongle1994/requirementepic" class="button">See more</a>
                         </div>
                     </div>
 
 
                     <div class="column column-three">
-                        <img src={require("./images/scp.png")} alt="Paris" class="place-image" style={{height: "274px"}}/>
+                        <img src={require("./images/scp.png")} alt="SCP" class="place-image" style={{height: "274px"}}/>
                         <div class="place-body">
                             <h3 class="place-heading">Hack Jam</h3>
                             <p class="place-time">Fall 2022</p>
                             <div class="place-description">Compete in HackJam Competitive coding event.</div>
-                            <a href="#" class="button">See more</a>
+                            <a href="https://www.usf.edu/engineering/cse/newsroom/hackjamfall22.aspx" class="button">See more</a>
                         </div>
                     </div>
 
 
                     <div class="column column-three">
-                        <img src={require("./images/image-proccessing.png")} alt="San Francisco" class="place-image" style={{height: "274px"}}/>
+                        <img src={require("./images/image-proccessing.png")} alt="ImagePro" class="place-image" style={{height: "274px"}}/>
                         <div class="place-body">
                             <h3 class="place-heading">Image Proccessing Tool</h3>
                             <p class="place-time">Spring 2022</p>
                             <div class="place-description">Develop tools to implement multiple image proccessing methods.</div>
-                            <a href="#" class="button">See more</a>
+                            <a href="https://github.com/VanDinhLe/kubot" class="button">See more</a>
                         </div>
                     </div>
                 </div>
@@ -277,10 +278,10 @@ function Footer() {
     return (
         <div id="footer">
             <div class="socials-list">
-                <a href="#a"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="#a"><i class="fab fa-instagram"></i></a>
-                <a href="#a"><i class="fab fa-twitter-square"></i></a>
-                <a href="#a"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
 
