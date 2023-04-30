@@ -632,6 +632,11 @@ img {
     background-color: #efefef;
     width: 100vw;
 }
+#contact i{
+    color: gray;
+    padding-left: 10px;
+    margin-right: 20px;
+}
 
 .contact-content {
     margin-top: 48px;

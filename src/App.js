@@ -7,14 +7,23 @@ function Contact(){
     return(
         <div id="contact" class="content-section">
             <h2 class="section-heading">CONTACT</h2>
-            <p class="section-subheading">Fan? Drop a note!</p>
+            <p class="section-subheading">Let's make friend!</p>
 
 
             <div class="row contact-content">
                 <div class="column col-sm-3 contact-info">
-                    <p><i class="ti-location-pin"></i>Tampa, FL</p>
-                    <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                    <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    <div style={{"display": "flex"}}> 
+                        <i class="ti-location-pin"><a href='#a'><i class="fab fa-github"></i></a></i>
+                        <p>Github</p>
+                    </div>
+                    <div style={{"display": "flex"}}>
+                        <i class="ti-mobile"><a href='#a'><i class="fas fa-envelope"></i></a></i>
+                        <p>vle16@usf.edu</p>
+                    </div >
+                    <div style={{"display": "flex"}}>
+                        <i class="ti-email"><a href='#a'><i class="fas fa-map-marker-alt"></i></a></i>
+                        <p>Email: mail@mail.com</p>
+                    </div>
                 </div>
 
 
@@ -47,6 +56,7 @@ function Contact(){
   )
 }
 
+// Background test
 function WavingText()
 {
     return(
@@ -103,9 +113,9 @@ function Navbar() {
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item $dropdown-link-hover-bg: $black" href="#kubot" style={{margin: 0}}>KUBOT</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#" style={{margin: 0}}>Another action</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#" style={{margin: 0}}>Something else here</a></li>
+                        <li><a class="dropdown-item" href="#activites" style={{margin: 0}}>Activites</a></li>
+                        {/* <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#" style={{margin: 0}}>Something else here</a></li> */}
                     </ul>
                 </li>
                 <li><a href="#contact" >Contact</a></li>
@@ -151,7 +161,11 @@ function About() {
                     <i class="fas fa-terminal fa-lg"></i> <i class="fab fa-python fa-lg"></i> <i class="fab fa-js-square fa-lg"></i> <i class="fab fa-css3-alt fa-lg"></i> <i class="fab fa-android fa-lg"></i>
                     <p>I love coding and I am most proficient in C++ and python. Currently I am studying HTML/JSS/CSS to build some cool projects such as this one.</p>
 
-                    <p>I like sport, especially soccer. My favorite position are striker and goalkeeper.</p>
+                    <p>My goal is to have an intership in tech field and get the chance to create helpful software for everyone.</p>
+                    <br></br>
+                    <p>Some technologies that I have been working with:</p>
+                    <p>- Programming Languages: Python, C, C++, HTML, CSS, Javascript, RISC-V</p>
+                    <p>- Tools: Linux, Unix, Github/Git, SSH, Flex, Bison, Jira</p>
                 </div>
             </div>
         </section>
@@ -208,16 +222,15 @@ function Project() {
 function Project2()
 {
     return(
-        <div id="tour" class="tour-section" style={{"margin-top": "50px"}}>
+        <div id="activites" class="tour-section" style={{"margin-top": "50px"}}>
             <div class="content-section">
                 <h2 class="section-heading text-white">OTHER ACTIVITIES</h2>
-                <p class="section-subheading text-white">Remember to book your tickets!</p>
+                <p class="section-subheading text-white">Working hard!</p>
                 
                 {/* <!-- Ticket --> */}
                 <ul class="tickets-list">
                     <li>Compiler: Develop compiler for DJ language <span class="sold-out">In Progress</span></li>
                     <li>Coffe Shop Management App: Develop Python program to manage coffee shop franchises <span class="sold-out">In Progress</span></li>
-                    <li>November <span class="quantiy">3</span></li>
                 </ul>
 
 
@@ -228,8 +241,8 @@ function Project2()
                         <div class="place-body">
                             <h3 class="place-heading">InCollege App</h3>
                             <p class="place-time">Fall 2022</p>
-                            <div class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="#" class="button">Buy Tickets</a>
+                            <div class="place-description">Create LinkedIn similar platform for students.</div>
+                            <a href="#" class="button">See more</a>
                         </div>
                     </div>
 
@@ -239,8 +252,8 @@ function Project2()
                         <div class="place-body">
                             <h3 class="place-heading">Hack Jam</h3>
                             <p class="place-time">Fall 2022</p>
-                            <div class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="#" class="button">Buy Tickets</a>
+                            <div class="place-description">Compete in HackJam Competitive coding event.</div>
+                            <a href="#" class="button">See more</a>
                         </div>
                     </div>
 
@@ -250,8 +263,8 @@ function Project2()
                         <div class="place-body">
                             <h3 class="place-heading">Image Proccessing Tool</h3>
                             <p class="place-time">Spring 2022</p>
-                            <div class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="#" class="button">Buy Tickets</a>
+                            <div class="place-description">Develop tools to implement multiple image proccessing methods.</div>
+                            <a href="#" class="button">See more</a>
                         </div>
                     </div>
                 </div>
@@ -323,8 +336,10 @@ var captionText = document.getElementById("caption");
 // test
 function toggleImg(src, alt){
     // console.log("haha");
-    modal.style.zIndex = "3";
-    modal.style.display = "block";
+    // modal.zIndex = 3;
+    // modal.zIndex = "3";
+    // module.
+    modal.display = "block";
     modalImg.src = src;
     captionText.innerHTML = alt;
 }
